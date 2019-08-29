@@ -1,0 +1,20 @@
+{
+    "appName": "awsamplifyionicsampl",
+    "roleName": "pinpointLambdaRole0b881e9f",
+    "cloudWatchPolicyName": "cloudWatchPolicy0b881e9f",
+    "pinpointPolicyName": "pinpointPolicy0b881e9f",
+    "authPolicyName": "pinpoint_amplify_0b881e9f",
+    "unauthPolicyName": "pinpoint_amplify_0b881e9f",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

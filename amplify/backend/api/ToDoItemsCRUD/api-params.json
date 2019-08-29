@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/ToDoItems",
+            "lambdaFunction": "ToDoItemsLambda",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "ToDoItemsCRUD",
+    "apiName": "ToDoItemsCRUD",
+    "functionArns": [
+        {
+            "lambdaFunction": "ToDoItemsLambda"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "awsamplifyionicsampl-awsenv-20190829150303-authRole",
+        "unAuthRoleName": "awsamplifyionicsampl-awsenv-20190829150303-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "ToDoItemsLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
